@@ -20,7 +20,8 @@ from .views import index,contexto,historia,mitos,terminos,tutoriales,exit
 
 
 urlpatterns = [
-    path('index/', index, name='index'),
+  
+    path('', index, name='index'),
     path('contexto/', contexto, name='contexto'),
     path('historia/', historia, name='historia'),
     path('mitos/', mitos, name='mitos'),
