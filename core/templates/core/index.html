@@ -13,15 +13,14 @@
     <meta name="keywords" content="LSM,Lengua de Señas, Lengua de Señas Mexicana, Comunidad Sorda, Personas Sordas,Inclusión">
     <meta name="description" content="Explora la Lengua de Señas Mexicana (LSM), el idioma visual de la comunidad sorda en México. Encuentra información, recursos y videos sobre LSM, para promover la inclusión a través de esta lengua única.">
     <title class="titulo">Lengua de Señas Mexicana</title>
-    
 
+     <!-- Script para mostrar el mensaje de bienvenida -->
+     <script type="text/javascript">
+      window.onload = function() {
+          alert('¡Bienvenido a la página de la Lengua de Señas Mexicana!');
+      };
+  </script>
 
-    <!-- Script para mostrar el mensaje de bienvenida -->
-    <script type="text/javascript">
-        window.onload = function() {
-            alert('¡Bienvenido a la página de la Lengua de Señas Mexicana!');
-        };
-    </script>
 </head>
 <body>
    <header>
@@ -29,7 +28,7 @@
       <nav> 
          <ul> 
             <li><a class="links" href={% url "index" %}>La Lengua de Señas Mexicana</a></li>
-            <li><a class="links"  href={% url "terminos"%}>Términos correctos</a></li>
+            <li><a class="links" href={% url "terminos"%}>Términos correctos</a></li>
             <li><a class="links" href={% url "historia"%}>Historia de la Lengua de Señas Mexicana</a></li>
             <li><a class="links" href={% url "contexto"%}>Contexto de la Comunidad Sorda</a></li>
             <li><a class="links" href={% url "mitos"%}>Mitos y realidades de las personas Sordas</a></li>
@@ -47,36 +46,14 @@
       <p class="letrita">Podcats sobre LSM:</p>
       <iframe style="border-radius:12px" src="https://open.spotify.com/embed/episode/3SCFhcP72VOab6JIITaCBH?utm_source=generator" width="80%" height="330" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
 
-   <aside>
-      <h2>Discapacidad Auditiva</h2>
-      <figure>
-         <img src="https://image.jimcdn.com/app/cms/image/transf/none/path/sa014c1f81b4024bd/image/ic656307e0059d8aa/version/1429029642/audiograma-niveles-de-audici%C3%B3n-hipoacusia-leve-moderada-severa-y-profunda.jpg" alt="Niveles de audición">
-         <figcaption>
-           Fuente: <a href="https://www.centroauditivo-valencia.es/2015/04/15/qu%C3%A9-dicen-los-resultados-de-mis-pruebas-audiol%C3%B3gicas/" target="_blank">https://www.centroauditivo-valencia.es</a>
-         </figcaption>
-       </figure>
-       <p>En los niveles leve y moderado se encuentran un grupo de personas llamadas "hipoacúsicas", quienes podría ser probable que se puedan comunicar verbalmente apoyados por la lectura de labios y su audición.</p>
-       <p>En los niveles severo y profundo, se encuentran las personas Sordas, quienes por el nivel que tienen de audición, generalmente se comunican mediante la Lengua de Señas y otros métodos de comunicación visual y táctil para interactuar con el entorno.</p>
-       <p>Tanto las personas hipoacúsicas como las personas Sordas usan auxiliar auditivo. Sin embargo con objetivos diferentes, las personas hipoacúsicas lo utilizan para escuchar y hablar mejor. Y las personas Sordas solamente lo usan como una medida de seguridad.</p>
-       <p>Es importante destacar que el término "Sordo" no implica solo la ausencia de audición, sino también una identidad cultural y lingüística rica, con una comunidad que utiliza y valora la Lengua de Señas como su principal medio de comunicación. Por otro lado, el término "hipoacúsico" se refiere a personas con pérdida auditiva parcial que pueden tener acceso a la comunicación oral con el apoyo de dispositivos auditivos y técnicas de habilitación auditiva.</p>
+      <!-- Formulario con Validación -->
+      <form id="formulario">
+          <label for="email">Correo electrónico:</label>
+          <input type="email" id="email" name="email" required>
+          <button type="submit">Enviar</button>
+      </form>
 
-   </aside>
-
-   <h2>Página para saber más de LSM: </h2>
-   <iframe width="500px" height="500px" src="https://mexicana.cultura.gob.mx/es/repositorio/x2abesp3qm-4"></iframe>    
-
-   <article>
-      <figure> 
-         <pre>
-            ,-'"-,
-            ('; ;
-            .) ,
-          .   ;
-           '-'
-         </pre>
-     </figure>
-   </article>
-
+      <button id="miBoton">Mostrar Saludo</button>
    </main>
 
    <footer>
