@@ -1,0 +1,276 @@
+/* General */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin-top: 120px;
+
+  }
+  
+  header nav ul li a.links{ 
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  header {
+    background: #003366;
+    color: #fff;
+    padding: 1rem;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: center; /* Centra el contenido horizontalmente */
+    align-items: center;     /* Centra el contenido verticalmente */
+    text-align: center;
+    font-family: 'Arial Black', sans-serif;
+    font-size: small;
+    border-bottom: 7px solid #98cedf;
+  
+  }
+  
+  
+  header nav {
+    display: flex;
+    flex-direction: column; /* Coloca el contenido del header en columna */
+    align-items: center;
+  }
+  
+  header nav h1 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+  }
+  
+  header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 0.8rem;
+  }
+  
+  main {
+    margin-top: 10rem; /* Ajusta este valor para el espacio que necesites */
+  }
+  
+  main h2 {
+    padding-left: 2rem; /* Espacio en el costado izquierdo dentro del párrafo */
+    padding-right: 3rem; /* Espacio en el costado izquierdo dentro del párrafo */
+    margin-top: 1rem; /* Espacio encima del párrafo */
+    margin-bottom: 1rem; /* Espacio debajo del párrafo */
+    font-size: 1.5rem; /* Ajusta el tamaño del texto */
+  }
+  
+  main p {
+    padding-left: 2rem; /* Espacio en el costado izquierdo dentro del párrafo */
+    padding-right: 3rem;
+    margin-top: 1rem; /* Espacio encima del párrafo */
+    margin-bottom: 1rem; /* Espacio debajo del párrafo */
+    font-size: 1.2rem; /* Ajusta el tamaño del texto */
+  }
+  
+  
+  p {
+  
+    margin-bottom: 1rem; /* Espacio debajo del párrafo */
+    font-size: 1.1rem; /* Ajusta el tamaño del texto */
+  }
+  
+  p:first-of-type {
+    margin-top: 0rem; /* Espacio encima del primer párrafo */
+    padding-left: 2rem;
+    padding-right: 3rem;
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+  }
+  
+
+  p.letrita {
+    font-weight: bold; /* Hace el texto en negritas */
+  }
+  
+  .hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('hero.jpg');
+    color: #fff;
+    text-align: center;
+    padding: 10rem 2rem;
+    padding-top: 10rem; /* Asegura que el contenido no quede debajo del header */
+  }
+  
+  .hero h2 {
+    font-size: 2.5rem;
+  }
+  
+  .button {
+    display: inline-block;
+    background: #ff7b54;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 1rem;
+    transition: background 0.3s;
+  }
+  
+  .button:hover {
+    background: #ff5733;
+  }
+  
+  footer {
+    background-color: #003366; /* Fondo oscuro */
+    color: #ccc; /* Texto claro para contraste */
+    padding: 2rem 1rem;
+    font-size: 0.9rem;
+    text-align: center;
+  }
+  
+  /* Contenedor principal del footer */
+  .footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* Organizar el footer en columnas en pantallas grandes */
+  @media (min-width: 768px) {
+    .footer-container {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+  }
+  
+  /* Enlaces importantes */
+  .footer-links ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-links div h3,
+  .footer-social div h3,
+  .footer-contact div h3 {
+    color: #ffffff; /* Color de título vibrante */
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+    text-align: center;
+  }
+  
+  .footer-links ul li {
+    margin-bottom: 0.5rem;
+  }
+  
+  .footer-links ul li a {
+    color: #ccc;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  .footer-links ul li a:hover {
+    color: #ffdd57; /* Color de hover */
+  }
+  
+  /* Redes sociales */
+  .social-icons {
+    display: flex;
+    gap: 2rem;
+    justify-content: center; /* Centra los iconos horizontalmente */
+    margin-top: 1rem;
+  }
+  
+  .social-icons a {
+    color: #ccc;
+    font-size: 1.5rem;
+    transition: color 0.3s;
+  }
+  
+  .social-icons a:hover {
+    color: #ffdd57; /* Cambia de color al hacer hover */
+  }
+  
+  /* Información de contacto */
+  .footer-contact p {
+    margin: 0.3rem 0;
+  }
+  
+  /* Copyright */
+  .footer-bottom {
+    background-color: #021217; /* Fondo más oscuro */
+    padding: 1rem 0;
+    margin-top: 1.5rem;
+  }
+   
+  
+  .footer-bottom p {
+    margin: 0;
+    color: #777;
+    font-size: 0.85rem;
+  }
+
+
+  /* Estilo base para todos los botones */
+a {
+    text-decoration: none; /* Elimina el subrayado del enlace */
+    font-family: Arial, sans-serif; /* Usar una fuente agradable */
+}
+
+a.btn-salir {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 5px; /* Este valor puede ajustarse según la altura del header */
+    margin-bottom: 0x;
+    background-color: #003366; /* Color atractivo */
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+a.btn-salir:hover {
+    background-color: #003366; /* Un color ligeramente más oscuro para el hover */
+    transform: scale(1.1); /* Hace que el botón crezca un poco cuando se pasa el ratón */
+}
+
+a.btn-salir:active {
+    background-color: #003366 /* Color aún más oscuro cuando se hace clic */
+    transform: scale(1); /* Vuelve al tamaño original cuando se hace clic */
+}
+
+/* Botón de login, si no está autenticado */
+.btn-login {
+    display: inline-block;
+    padding: 12px 25px;
+    margin: 10px;
+    margin-top: 10px; /* Ajusta este valor según el tamaño de tu header */
+    background-color: #003366; /* Color verde para login */
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-login:hover {
+    background-color: #003366; /* Color verde más oscuro para el hover */
+    transform: scale(1.05);
+}
+
+.btn-login:active {
+    background-color: #003366;
+    transform: scale(1);
+}
+

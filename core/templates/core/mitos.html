@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    {% load static %}
+    <link rel="stylesheet" href="{% static "estilos.css"%}">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <header>
+    
+    <a href={% url "index" %}> Regresar a Inicio</a>
+    <h1>Mitos y realidades de las personas Sordas</h1>
+  </header>
+      <p>La sociedad cree muchas cosas respecto a las personas Sordas que no son ciertas, por ejemplo que las personas Sordas:</p>
+      <dl>
+        <dt class="negritas"> No escuchan nada </dt>
+        <dd> Generalmente tienen restos auditivos</dd>
+        <dt class="negritas"> No hablan </dt>
+        <dd> Sí pueden expresar palabras</dd>
+        <dt class="negritas"> No manejan </dt>
+        <dd> Algunos Sordos tiene vehículo y lo manejan</dd>
+        <dt class="negritas"> No pueden trabajar </dt>
+        <dd> Muchos Sordos trabajan</dd>
+        <dt class="negritas"> No estudian </dt>
+        <dd> Cada vez hay más Sordos que son ingenieros, licenciados, etc.</dd>
+        <dt class="negritas"> No pueden tener una familia propia </dt>
+        <dd> Muchas personas Sordas tienen su familia y se hacen cargo de ella.</dd>
+        <dt class="negritas"> Saben leer y escribir perfectamente </dt>
+        <dd> Generalmente tienen un porcentaje bajo de lecto-escritura.</dd>
+        <dt class="negritas"> Saben leer los labios </dt>
+        <dd> Entienden generalmente menos del 30% de lo que alguien habla.</dd>
+        <dt class="negritas"> Que tienen discapacidad intelectual </dt>
+        <dd> La discapacidad auditiva NO está ligada a la discapacidad intelectual.</dd>
+        <dt class="negritas"> Que es hereditario </dt>
+        <dd> Sólo el 5% de personas Sordas, tienen discapacidad auditiva por herencia.</dd>
+
+      </dl>
+
+      <blockquote cite="https://cultura-sorda.org/sordera-construyendo-verdades-y-derribando-pensares-sociales/">
+        "Entre esos mitos se encuentran afirmaciones tales como: la Lengua de Señas es una lengua internacional, todos los sordos saben leer y escribir, los sordos saben lectura labial, etc. Y así un sinfín creencias y saberes colectivos que hacen a la construcción social del ser sordo. Derribando pensares propone analizar, cuestionar y reflexionar uno a uno estos mitos y así conocer a la persona Sorda, potenciando de esta forma un real y plena integración."
+      </blockquote>
+
+      <footer>
+        <address>
+            <p>Desarrollado por: Liliana Rubí Pedraza Hernández</p>
+            <p>Derechos reservados &copy;</p>
+        </address>
+     </footer>
+
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    {% load static %}
+    <link rel="stylesheet" href="{% static "estilos.css"%}">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tutoriales</title>
+</head>
+<body>
+    <header>
+      <a href={% url "index" %}> Regresar a Inicio</a>
+      <h1>Tutoriales e información para aprender LSM</h1>
+      <h2>A continuación, se muestran unos tutoriales básicos de Lengua de Señas Mexicana.</h2>
+      <video width="640" height="360" controls <source src="Abecedario en LSM.mp4"></video>
+    </header>
+    <figure>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/lrNQdTsVD4k" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <figcaption>Video proporcionado por el canal de YouTube: <a href="https://www.youtube.com/c/DiloEnSe%C3%B1as" target="_blank" rel="noopener noreferrer">Dilo en Señas</a></figcaption>
+    </figure>
+   
+    <hr>
+    <h3>Gramática de la Lengua de Señas</h3>
+    <p>El español y la <abbr title="Lengua de Señas Mexicana">LSM</abbr> no son iguales si hablamos de gramática. En LSM hay ciertas cosas que hay que tomar en cuenta: </p>
+    <ul>
+        <li>Causa y efecto: Las personas Sordas al comunicarse en <abbr title="Lengua de Señas Mexicana">LSM</abbr>, primero se enfocan en decir la casua y después el efecto, a diferencia del español, en el que solemos utilizar ambas maneras (causa y efecto, efecto y causa). Por ejemplo:</li>
+        <p>En español podemos decir: "Me despidieron del trabajo porque llegué tarde" y también podemos decir: "Llegué tarde al trabajo y me despidieron."</p>
+        <p>Sin embargo, en <abbr title="Lengua de Señas Mexicana">LSM</abbr> la manera correcta es hacerlo en el orden causa-efecto: "No hice la tarea y el maestró me regañó".</p>
+        <li>Orden lógico-cronológico: Las personas Sordas, cuando están contando alguna situación que vivieron, comienzan a relatar desde lo primero que sucedió.</li> 
+        <p>Por ejemplo: le preguntan a una persona Sorda si va regularmente al supermercado, y esta empieza a platicar "Ayer fui con mi esposa, y estabamos viendo los pasillos y le dije que si le gustaba este cereal y me dijo que no..." y hasta después de terminar de contar todo lo que hizo en el supermercado, dice: "pero no voy seguido al supermercado". Esto en algunos casos, hace que sea complicada la comunicación cuándo una persona Sorda vivió una situación de abuso/agresión, ya que, en lugar de comentar directamente lo que les sucedió, comienzan a contar desde lo que hicieron ese día al despertar.</p>
+        <li>Tópico: Al comunicarnos en LSM, tenemos que dejar bien en claro el tema del cuál estamos hablando.</li>
+    </ul>
+
+    <h4><mark>Características</mark></markCaracter></h4>
+    <ul>
+        <li>No existen los artículos: la, el, los</li>
+        <li>No existe el verbo "ser".</li>
+        <li>Los verbos no se conjugan, están en infinitivo (ar, er, ir)</li>
+        <li>El verbo "estar" solamente se utiliza al decir "¿cómo estás?" de ahí en fuera, no se vuelve a utilizar.</li>
+    </ul>
+
+    <h4>La gramática sugerida de la LSM es:</h4>
+    <img src="gramaticaimg.png" width="950" height="500" alt="Forma gramatical de las oraciones en LSM">
+    <p>Cabe aclarar que el objeto y sujeto se pueden intercambiar de lugar.</p>
+
+    <h3>Video de ejemplo:</h3>
+
+
+    <video width="640" height="360" controls <source src="Gramatica LSM.mp4"></video>
+    <footer>
+        <address>
+            <p>Desarrollado por: Liliana Rubí Pedraza Hernández.</p>
+            <p>Derechos reservados &copy;</p>
+        </address>
+     </footer>
+
+</body>
+</html>

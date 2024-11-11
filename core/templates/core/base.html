@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplicación</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'estilos.css' %}"> 
+</head>
+<body>
+    {% if request.user.is_authenticated %}
+        <!-- Botón de salir con estilo -->
+        <a href="{% url 'exit' %}" class="btn-salir">Salir</a>
+    {% else %}
+        <a href="{% url 'login' %}" class="btn-login">Iniciar Sesión</a>
+    {% endif %}
+    
+    {% block content %} {% endblock %}
+</body>
+</html>
